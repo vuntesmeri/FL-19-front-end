@@ -1,0 +1,47 @@
+$fonth: ("ems": 1.2em, "eml": 2.5em, "vwss": 0.8vw, "vws": 0.9vw, "vwl": 2vw);
+$height:100vh;
+$width:40vw;
+
+@mixin image-card {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    min-height: 15vw;
+    align-self: center;
+}
+
+
+@mixin inputs {
+    padding: 0.5vh;
+    font-size: .6vw;
+    border: 0;
+    border-radius: 0;
+    background-color: $color2;
+    border-bottom: 1px solid $color7;
+    color: $color7;
+}
+
+@mixin main {
+    font-family: system-ui;
+    font-weight: 200;
+}
+
+$image: url("./../img/4.jpg");
+$image1: url("./../img/5.jpeg");
+$image2: url("./../img/6.jpg");
+$image3: url("./../img/7.jpg");
+
+
+$color1: #dfc1d9;
+$color2: #9f86a2;
+$color3: #69395e;
+$color4: #8a6f8d;
+$color5: #caa2cb;
+$color6: #5d3d85;
+$color7: #725e68;
+$color8: #8a46de;
+$color9: #4f0a5e;
+$color10:#8a46de;
+$color11: #8a769f;
+$color12: #4f0a5e;

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin: 2em auto 2em auto;
+    padding: 0;
+    font-size: 2em;
+    color: darkgray;
+    border-color: darkgray;
+}
+
+.buttons {
+    margin: 0 auto;
+    padding: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circle:hover {
+    background-color: rgb(126, 168, 245);
+}
+
+.circle:active {
+    background-color: cornflowerblue;
+    transform: translateY(2px);
+}
+
+.buttons button {
+    cursor: pointer;
+    margin: 0 0.5em;
+    font-size: 2em;
+    background-color: burlywood;
+}
+
+.buttons button:hover {
+    background-color: darkgoldenrod;
+}
+
+.circle {
+    margin: 1em auto 1em auto;
+    background-color: cornflowerblue;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+}
+
+.click {
+    margin: auto;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    background-color: transparent;
+    padding: 2.5em 0.9em 2.5em 0.9em;
+    justify-content: space-around;
+    font-size: 5em;
+}

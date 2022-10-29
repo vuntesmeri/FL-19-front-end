@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        header {
+            .header__image {
+                @include image-card;
+                height: 90vh;
+                background-image: $image;
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+
+                nav {
+
+                    ul {
+                        padding: $height*0.05;
+                        width: $width*1.5;
+                        font-size: (1.5em*0.68);
+                        display: grid;
+                        grid-template-columns: repeat((4*2.5), 1fr);
+
+                        li {
+                            color: $color12;
+                            display: inline;
+                            text-align: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $color2;
+
+                                ;
+                            }
+                        }
+                    }
+                }
+
+                .header__text {
+                    @include main;
+                    padding: 5vw;
+                    margin: 10vw auto;
+                    font-size: 2.3em;
+                    color: #ddd;
+                    text-align: center;
+                    width: 55vw;
+
+                    button {
+                        opacity: 50%;
+                        margin: 10vw*0.5 auto;
+                        background: transparent;
+                        border: 1px solid gray;
+                        font-size: .3em;
+                        color: gray;
+                        padding: 1vw 2vw;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: white;
+                            background-color: #0000005e;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .main-row {
+                display: grid;
+                grid-gap: 2vw*0.4;
+                margin: 0vw 20vw 1vw 20vw;
+                justify-content: center;
+
+                h2 {
+                    @include main;
+                    margin: 0;
+                    font-size: map-get($fonth, "vwl");
+                    text-align: center;
+                    font-weight: 350;
+                }
+
+                .main-card {
+                    margin: 0vw auto 2vw auto;
+                    width: 72%;
+                    display: grid;
+                    box-shadow: 0 0 10px gray;
+                    grid-template-columns: 1fr 3fr;
+
+                    h2 {
+                        margin: 1.5vh auto 0 auto;
+                        font-size: map-get($fonth, "vwl");
+                        font-weight: lighter;
+                        color: $color2;
+                    }
+
+                    .main-card__text {
+                        margin: 0 auto;
+                        font-size: 1vw;
+                        color: $color3;
+                        padding: 0 2vh 2vh 2vh;
+                        align-content: center;
+                        display: grid;
+                        font-weight: 350;
+                    }
+
+                    .card__image_first {
+                        @include image-card;
+                        background-image: $image2;
+                    }
+
+                    .card__image_second {
+                        @include image-card;
+                        background-image: $image2;
+                    }
+
+                    .card__image_three {
+                        @include image-card;
+                        background-image: $image3;
+                    }
+                }
+            }
+
+            .main-row__hot-tours {
+                @include main;
+                font-size: 3em;
+            }
+
+            .main-review {
+                background-color: $color4;
+                width: 80vw;
+                display: grid;
+                padding: 1vw;
+
+                h2 {
+                    color: lighten($color5, 20%);
+                    font-size: map-get($fonth, "ems");
+                    margin-bottom: 1vw;
+                }
+
+                .reviews {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 1vw;
+
+                    .review-card {
+                        @extend .reviews;
+                        background: $color5;
+                        grid-template-columns: 1fr 3fr;
+
+                        .circle-image {
+                            width: 10vh;
+                            height: 10vh;
+                            border-radius: 50%;
+                        }
+
+                        .review-card__text {
+                            margin: 0;
+                            font-weight: lighter;
+                            font-size: 1.4vh;
+                            display: grid;
+                            padding: 0 2vh;
+                            align-content: center;
+                            color: desaturate(white, 90%);
+                        }
+
+                        .review-card__text span {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+
+            .search-individual-tour {
+                margin: auto;
+                width: 50vw;
+                padding: 1vw;
+                background-color: $color2;
+
+                h3 {
+                    @include main;
+                    font-size: map-get($fonth, "ems");
+                    text-align: center;
+                    color: $color12;
+                }
+
+                .search-form {
+                    display: grid;
+                    grid-column-gap: .5vw;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    justify-items: center;
+
+                    .search-form__inputs {
+                        @include inputs;
+                    }
+
+                    .date {
+                        @extend .search-form;
+                        grid-template-columns: 1fr 1fr;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    footer {
+        display: grid;
+        height: 100%;
+        padding: 1vw 0 2vw;
+        grid-template-columns: repeat(3, 1fr);
+        background: $color6;
+
+
+        .social-network {
+            padding-left: 2vw;
+
+            img {
+                width: 2vw;
+                height: 2vw;
+                padding-right: 1vw;
+            }
+
+            h3 {
+                font-size: map-get($fonth, "vwss");
+                color: $color8;
+                margin: 0 0 1vw 0;
+            }
+
+            .social-network__copyright {
+                font-size: .77vw;
+                color: $color9;
+                padding-top: 2vw;
+            }
+        }
+
+        .footer__menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h3 {
+                font-size: map-get($fonth, "vws");
+                margin: 0 0 .5vw;
+                color: $color8;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0 0 0 1vw;
+                width: 100%;
+
+                li {
+                    line-height: .6em;
+
+                    a {
+                        color: $color8;
+                        font-size: 1em*0.6;
+                        text-decoration: none;
+
+
+                        &:hover {
+                            color: $color9;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .feedback_and_payments {
+            display: grid;
+
+            .send-email {
+                padding-right: 2vw;
+                font-size: 0.8vw;
+
+                button {
+                    font-size: 0.5vw;
+                    margin-top: 1vw;
+                    background: $color10;
+                    padding: .5vw;
+                    width: 100%;
+                    border: 0;
+                    cursor: pointer;
+                    color: white;
+
+
+                    :hover {
+                        background: $color8;
+                        color: white;
+                    }
+                }
+
+                input {
+                    font-size: 0.5vw;
+                    width: 97%;
+                    border: 0;
+                    padding: .5vw;
+                    color: $color11;
+                }
+            }
+
+            .payments {
+                h3 {
+                    color: $color8;
+                    margin: 1vw 0 0;
+                    font-size: map-get($fonth, "vwss");
+                }
+
+                .payments__image {
+                    img {
+                        width: 3vw;
+                        padding-right: 1vw;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+/*# sourceMappingURL=style1.css.map */

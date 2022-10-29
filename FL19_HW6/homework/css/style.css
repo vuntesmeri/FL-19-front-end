@@ -1,0 +1,16 @@
+.head-image {
+    background-image: url(./../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.navbar {
+    opacity: 90%;
+}
+
+.logo-header {
+    color: #C62C45;
+}

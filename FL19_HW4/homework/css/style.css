@@ -1,0 +1,342 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 50px;
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+}
+
+
+.header-menu {
+    width: 100%;
+    height: 5.625vw;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    justify-self: start;
+    align-items: center;
+}
+
+.logo {
+    height: 2.1vw;
+}
+
+.header-menu .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 1.42vw;
+}
+
+.header-menu .menu li {
+    text-transform: uppercase;
+    font-size: 0.83vw;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-menu .menu li a {
+    text-decoration: none;
+}
+
+.header-menu .order {
+    width: 14.375vw;
+    height: 3.263vw;
+    font-size: 0.83vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #01b6d4;
+    color: #ffffff;
+    padding: 0;
+    border: 0px;
+    border-radius: 1px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.ebo .first {
+    height: 89.2vh;
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    z-index: 1;
+}
+
+.ebo .first .grey {
+    background-color: #C4C4C4;
+}
+
+.ebo .second {
+    height: 89.2vh;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.ebo .second .site-name {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.ebo .site-name p {
+    margin: 0;
+    font-size: 20vw;
+    font-weight: normal;
+    font-style: initial;
+    color: #000000;
+    vertical-align: middle;
+}
+
+.ebo .site-name h2 {
+    margin: 0;
+    font-size: 3.6vw;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.ebo .site-name h3 {
+    font-size: 1.7vw;
+    font-weight: normal;
+    color: #ffffff;
+    opacity: 80%;
+}
+
+.ebo .site-image {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.ebo .site-image .image0 {
+    margin-right: 100px;
+    width: 43.3vw;
+    height: 28.8vw;
+    align-self: center;
+    justify-self: left;
+}
+
+.cats {
+    margin: 7.7vw 0 .7vw 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 7.7vw;
+}
+
+.cats .ebo-real {
+    height: 30.2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.5vw;
+}
+
+.cats .ebo-real .real-life {
+    margin: 0 7.9vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cats .ebo-real .real-life h2 {
+    margin: 0 0 3.7vw 0;
+    padding: 0;
+    font-size: 3.33vw;
+    font-weight: normal;
+    color: #079fd0;
+
+}
+
+.cats .ebo-real .real-life p {
+    margin: 0 0 3.7vw 0;
+    padding: 0;
+    font-size: 1.6vw;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.cats .ebo-real .real-life a {
+    font-size: 1.25vw;
+    color: #079fd0;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.cats .ebo-real .image1 {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    background-image: url("./../img/cat1.png");
+}
+
+.cats .ebo-real .image2 {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    background-image: url("./../img/cat2.png");
+    float: right;
+}
+
+.add {
+    width: 100%;
+    display: grid;
+}
+
+.name {
+    margin: auto;
+}
+
+.add h2 {
+    margin: 6.94vw auto 6.94vw auto;
+    font-size: 3.33vw;
+    font-weight: 400;
+    color: #079fd0;
+}
+
+.add .can {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3.5vw;
+}
+
+.add .can .ebo-can {
+    flex: 1;
+}
+
+.add .can .ebo-can .info {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.ebo-can .image-ebo1 {
+    height: 21.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    background-image: url("./../img/ebo1.jpg");
+}
+
+.ebo-can .image-ebo2 {
+    height: 21.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    background-image: url("./../img/ebo2.jpg");
+}
+
+.ebo-can .image-ebo3 {
+    height: 21.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+    background-image: url("./../img/ebo3.jpg");
+
+}
+
+.ebo-can h3 {
+    margin-bottom: 2.9vw;
+    font-size: 2.08vw;
+    font-weight: normal;
+    color: #079fd0;
+}
+
+.ebo-can p {
+    margin-bottom: 2.9vw;
+    font-size: 1.38vw;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.ebo-can a {
+    margin-bottom: 2.9vw;
+    font-size: 1.25vw;
+    font-weight: normal;
+    color: #079fd0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 2vw 50px;
+    background-color: #c4c4c4;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 1vw;
+
+}
+
+.footer .footer-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer .about ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-transform: capitalize;
+    gap: 0.9vw;
+    justify-content: center;
+}
+
+.footer .support ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.9vw;
+    justify-content: flex-start;
+}
+
+.footer .feedback ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.9vw;
+    justify-content: flex-start;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.rights {
+    display: flex;
+    font-weight: bolder;
+    justify-content: flex-end;
+
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: .9vw;
+    cursor: pointer;
+
+}

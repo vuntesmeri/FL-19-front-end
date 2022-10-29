@@ -1,0 +1,73 @@
+.table {
+    margin: auto;
+    width: 36vw;
+    height: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-self: center;
+    border: none;
+}
+
+.cell {
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 4.5vw;
+    color: crimson;
+    width: 5.5vw;
+    background-color: cadetblue;
+    border-color: gray;
+    border-style: groove;
+    border-radius: 10%;
+    border-width: 1px;
+}
+
+.buttons {
+    width: 33vw;
+    margin: 4vw auto 4vw auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 14.5vw;
+    height: 3vw;
+    font-size: 2vw;
+    background-color: rgb(165, 153, 124);
+    border-color: cadetblue;
+    border-width: 3px;
+}
+
+.buttons button:hover {
+    color: crimson;
+}
+
+.name {
+    font-size: 3vw;
+    text-align: center;
+    width: 30vw;
+    margin: 1vw auto 4vw auto;
+}
+
+.rose {
+    background-color: palevioletred;
+    color: lightgrey;
+}
+
+.grey {
+    background-color: lightgrey;
+    color: #000;
+}
+
+.green {
+    background-color: green;
+    color: #ffff;
+}
