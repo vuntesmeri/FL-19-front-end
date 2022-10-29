@@ -1,0 +1,103 @@
+.body {
+    height: 50vh;
+    width: 60vw;
+}
+
+.name {
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 1vw auto;
+}
+
+button {
+    height: 2vw;
+    width: 8vw;
+    margin: .5vw;
+    font-size: 0.7vw;
+    border-radius: 0.4vw;
+    border-bottom-style: solid;
+    background-color: seagreen;
+    border: none;
+    color: ghostwhite;
+}
+
+.namesfetch button {
+    height: 1vw;
+    background-color: chocolate;
+
+}
+
+input {
+    height: 1.4vw;
+    width: 10vw;
+}
+
+.containers {
+    margin: 2vw auto;
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+.box {
+    padding: 1vw;
+    min-width: 24vw;
+    min-height: 24vw;
+    border: .2vw solid lightgrey;
+    text-align: center;
+}
+
+.box .namesjs {
+    margin: 0.5vw auto;
+    min-height: 4.5vw;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .namesfetch {
+    margin: 0.5vw auto;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.load {
+    border-radius: 50%;
+    border-top: .5vw dotted rgb(115, 108, 115);
+    width: 5vw;
+    height: 5vw;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.red {
+    background-color: chocolate;
+}

@@ -1,0 +1,116 @@
+.game-board {
+    margin: auto;
+    width: $width-main*3;
+    background-color: $color4;
+    padding: .5vw;
+
+    .rules {
+        width: $width-main*2;
+        margin: 0 auto;
+        font-size: $font-size-main*0.5;
+        ;
+        color: $color2;
+        border: 1px solid $color3;
+
+        .rules li {
+            list-style: none;
+        }
+    }
+
+    .name {
+        margin: auto;
+        width: $width-main*2;
+        padding: .5vw;
+        font-size: $font-size-main;
+        ;
+        text-align: center;
+        color: $color3;
+    }
+
+    .play {
+        margin: 0vw;
+        color: $color2;
+        font-size: $font-size-main;
+        text-align: center;
+    }
+
+    .game {
+        padding: 3vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center center;
+
+        .stone {
+            @include back-image;
+            background-image: $image1;
+
+            &:hover {
+                @include hover;
+            }
+        }
+
+        .sciccors {
+            @include back-image;
+            background-image: $image2;
+
+            &:hover {
+                @include hover;
+            }
+        }
+
+        .paper {
+            @include back-image;
+            background-image: $image3;
+
+            &:hover {
+                @include hover;
+            }
+        }
+    }
+
+    .winner {
+        border: 1px solid $color3;
+        margin: 1vw auto 1vw auto;
+        width: $width-main*2;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: space-around;
+
+        .player {
+            display: flex;
+            margin: 1vw;
+            padding: 0;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            h1 {
+                font-size: $font-size-main*0.5;
+                color: $color2;
+                padding: 0;
+                margin: 0;
+            }
+
+            h2 {
+                font-size: $font-size-main*0.8;
+                ;
+                color: $color1;
+                margin: 0;
+            }
+        }
+    }
+
+    .reset {
+        text-align: center;
+
+        .reset-button {
+            margin: auto;
+            width: $width-main*0.5;
+            height: $width-main*0.1;
+            color: $color3;
+            font-size: $font-size-main*.6;
+            ;
+            background-color: $color2;
+        }
+    }
+}

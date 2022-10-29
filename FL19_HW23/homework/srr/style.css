@@ -1,0 +1,252 @@
+/* Your style goes here */
+body {
+  padding: 0;
+  margin: auto;
+  font-family: Garamond(serif);
+  background-color: hsla(177, 35%, 56%, 0.267);
+  font-family: 'The Nautigal', cursive;
+}
+
+.birth {
+  font-size: 2.2vw;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 1px solid lightpink;
+  background-color: rgb(189, 186, 186);
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2vw;
+
+}
+
+hr {
+  border: .1px solid black;
+}
+
+.calendar {
+  margin: 2vw auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  place-items: center center;
+}
+
+
+
+.year {
+  margin: auto;
+  padding: auto;
+  width: 4vw;
+  height: 4vw;
+  border: 1px solid #ffff;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(165, 163, 158);
+  cursor: pointer;
+}
+
+.year p {
+  font-size: 1vw;
+  color: #ffff
+}
+
+.year:hover {
+  background-color: transparent;
+}
+
+.child {
+  background-color: rgb(226, 225, 226);
+}
+
+.youth {
+  background-color: rgb(202, 202, 198);
+}
+
+.active {
+  background-color: rgb(169, 170, 168);
+}
+
+.travel {
+  background-color: rgb(155, 143, 143);
+}
+
+.wisdom {
+  background-color: rgb(114, 112, 112);
+}
+
+.child p,
+.youth p,
+.active p,
+.travel p,
+.wisdom p {
+  color: black;
+}
+
+.head,
+.years p {
+  font-size: 1.5vw;
+  font-family: 'HalibutSerif';
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.years p {
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: .5vw;
+  padding: .3vw;
+  border: 1px solid rgb(98, 173, 173);
+}
+
+.fullyear {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.years {
+  margin: 0 auto 1vw auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.board {
+  /* text-align: center; */
+  margin: 0 auto;
+  /* width: 60vw; */
+  /* border: 2px solid grey; */
+  /* background-color: grey; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.week {
+  font-family: 'HalibutSerif';
+  font-size: .6vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+}
+
+.monthboard {
+  padding: 1vw;
+  text-align: center;
+}
+
+.month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+
+.day {
+  font-size: .7vw;
+  margin: .2vw;
+  padding: .3vw;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: rgba(169, 169, 169, 0.651);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.red {
+  background-color: rgb(126, 98, 104);
+  color: #ffff;
+}
+
+.board1 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fullmonth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.fullmonth p {
+  cursor: pointer;
+}
+
+.monthname {
+  font-size: 1.3vw;
+}
+
+.prevm,
+.nextm {
+  width: 2.5vw;
+  height: 2.5vw;
+  font-size: .6vw;
+  padding: .1vw;
+  border-radius: 50%;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center {
+  font-family: 'HalibutSerif';
+}
+
+.mboard {
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.day1 {
+  /* width: 2vw;
+  height: 2vw; */
+  font-size: 1vw;
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: rgba(169, 169, 169, 0.651);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day1:hover {
+  background-color: transparent;
+}
+
+.week1 {
+  font-size: 1vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+}
+
+.hide {
+  visibility: hidden;
+}

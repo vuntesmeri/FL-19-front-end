@@ -1,0 +1,294 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./css/style.scss ***!
+  \*********************************************************************************************************/
+body {
+  padding: 0;
+  margin: auto;
+  background-color: hsla(177deg, 35%, 56%, 0.267);
+}
+body .main {
+  margin: 0 auto;
+  width: 80vw;
+  text-align: center;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .main .birth {
+  font-size: 2.2vw;
+  width: 20vw;
+  height: 20vw;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid lightpink;
+  border-radius: 50%;
+  background-color: rgb(189, 186, 186);
+}
+
+.calendar {
+  margin: 2vw auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  place-items: center center;
+}
+.calendar .year {
+  margin: auto;
+  padding: auto;
+  width: 4vw;
+  height: 4vw;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(165, 163, 158);
+  cursor: pointer;
+}
+.calendar .year:hover {
+  background-color: transparent;
+}
+.calendar .year p {
+  font-size: 1vw;
+  color: white;
+}
+.calendar .child {
+  background-color: rgb(226, 225, 226);
+}
+.calendar .child p {
+  color: #000;
+}
+.calendar .youth {
+  background-color: rgb(202, 202, 198);
+}
+.calendar .youth p {
+  color: #000;
+}
+.calendar .active {
+  background-color: rgb(169, 170, 168);
+}
+.calendar .active p {
+  color: #000;
+}
+.calendar .travel {
+  background-color: rgb(155, 143, 143);
+}
+.calendar .travel p {
+  color: #000;
+}
+.calendar .wisdom {
+  background-color: rgb(114, 112, 112);
+}
+.calendar .wisdom p {
+  color: #000;
+}
+.calendar .red {
+  background-color: rgb(126, 98, 104);
+  color: white;
+}
+
+.fullyear {
+  margin: 0 auto;
+  text-align: center;
+}
+.fullyear .years {
+  margin: 0 auto 1vw auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.fullyear .years .hide {
+  visibility: hidden;
+}
+.fullyear .years p {
+  margin: 0 auto;
+  font-size: 0.5vw;
+  padding: 0.3vw;
+  border: 1px solid rgb(98, 173, 173);
+  border-radius: 50%;
+  color: rgb(98, 173, 173);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.fullyear .years .head {
+  font-size: 1.5vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.fullyear .board1 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fullyear .board1 .mboard {
+  margin: 0 auto;
+  width: 40vw;
+}
+.fullyear .board1 .mboard .monthboard {
+  margin: 0 auto;
+  padding: 1vw;
+}
+.fullyear .board1 .mboard .monthboard .fullmonth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+.fullyear .board1 .mboard .monthboard .fullmonth p {
+  cursor: pointer;
+}
+.fullyear .board1 .mboard .monthboard .fullmonth .monthname {
+  font-size: 1.3vw;
+}
+.fullyear .board1 .mboard .monthboard .fullmonth .prevm,
+.fullyear .board1 .mboard .monthboard .fullmonth .nextm {
+  width: 2.5vw;
+  height: 2.5vw;
+  font-size: 0.6vw;
+  color: rgb(98, 173, 173);
+  padding: 0.1vw;
+  border: 1px solid rgb(98, 173, 173);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fullyear .board1 .mboard .monthboard .fullmonth .prevm .hide,
+.fullyear .board1 .mboard .monthboard .fullmonth .nextm .hide {
+  visibility: hidden;
+}
+.fullyear .board1 .mboard .monthboard .center {
+  font-size: 1.3vw;
+}
+.fullyear .board1 .mboard .monthboard .week1 {
+  font-size: 1vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  cursor: pointer;
+}
+.fullyear .board1 .mboard .monthboard hr {
+  border: 0.1px solid black;
+}
+.fullyear .board1 .mboard .monthboard .month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  cursor: pointer;
+  cursor: pointer;
+}
+.fullyear .board1 .mboard .monthboard .day1 {
+  font-size: 1vw;
+  margin: 1vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(169, 169, 169, 0.651);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.fullyear .board1 .mboard .monthboard .day1:hover {
+  background-color: transparent;
+}
+.fullyear .board1 .mboard .monthboard .day1 .red {
+  background-color: rgb(126, 98, 104);
+  color: white;
+}
+.fullyear .board1 .board {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.fullyear .board1 .board .monthboard {
+  margin: 0 auto;
+  padding: 1vw;
+}
+.fullyear .board1 .board .monthboard .fullmonth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+.fullyear .board1 .board .monthboard .fullmonth .hide {
+  visibility: hidden;
+}
+.fullyear .board1 .board .monthboard .fullmonth p {
+  cursor: pointer;
+}
+.fullyear .board1 .board .monthboard .fullmonth .monthname {
+  font-size: 1.3vw;
+}
+.fullyear .board1 .board .monthboard .fullmonth .prevm,
+.fullyear .board1 .board .monthboard .fullmonth .nextm {
+  width: 2.5vw;
+  height: 2.5vw;
+  font-size: 0.6vw;
+  padding: 0.1vw;
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fullyear .board1 .board .monthboard .week {
+  font-size: 0.6vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  cursor: pointer;
+}
+.fullyear .board1 .board .monthboard hr {
+  border: 0.1px solid black;
+}
+.fullyear .board1 .board .monthboard .month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  cursor: pointer;
+  cursor: pointer;
+}
+.fullyear .board1 .board .monthboard .month .day {
+  font-size: 0.7vw;
+  margin: 0.2vw;
+  padding: 0.3vw;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(169, 169, 169, 0.651);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.fullyear .board1 .board .monthboard .month .day:hover {
+  background-color: transparent;
+  color: black;
+}
+.fullyear .board1 .board .monthboard .month .day .red {
+  background-color: rgb(126, 98, 104);
+  color: white;
+}
+
+.blank {
+  width: 50vw;
+  height: 30vw;
+  margin: 2vw auto;
+  background-color: transparent;
+  border: none;
+  font-size: 1vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

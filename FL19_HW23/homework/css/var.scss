@@ -1,0 +1,15 @@
+$text: 1vw;
+
+@mixin grid7 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+
+@mixin center($display, $flex-direction, $justify-content) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}

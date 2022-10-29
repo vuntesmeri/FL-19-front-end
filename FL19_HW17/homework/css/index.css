@@ -1,0 +1,94 @@
+body {
+    width: 70%;
+    margin: 1vw auto;
+    text-align: center;
+}
+
+header {
+    font-size: 3vw;
+    font-weight: bold;
+    color: darkcyan;
+    text-shadow: 0.1vw 0vw deeppink;
+}
+
+main {
+    margin: 2vw auto;
+}
+
+button {
+    background-color: lightblue;
+    width: 40%;
+    height: 2vw;
+    margin: 1vw auto 0 auto;
+    color: deeppink;
+    font-size: 1vw;
+}
+
+.characters-list {
+    margin: 2vw auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+
+.battle-field {
+    margin: 2vw auto 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2vw;
+}
+
+.battle-field img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    padding: 1vw;
+    border: solid lightblue;
+}
+
+.hero {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hero ul {
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    font-size: 1vw;
+    list-style: none;
+    row-gap: 0.3vw;
+    padding: 1vw;
+}
+
+.text {
+    align-self: center;
+}
+
+.health {
+    color: deeppink;
+    font-size: 2vw;
+}
+
+.name {
+    color: darkcyan;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.battle-field .hero span {
+    color: deeppink;
+    font-weight: 600;
+}

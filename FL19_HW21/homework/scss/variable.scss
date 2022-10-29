@@ -1,0 +1,29 @@
+$font-main: Helvetica, sans-serif;
+$font-size-main: 2vw;
+$width-main: 20vw;
+
+$image1: url("./../img/stone.png");
+$image2: url("./../img/sciccors.png");
+$image3: url("./../img/paper.png");
+
+$color1: #fff;
+$color2: grey;
+$color3: hotpink;
+$color4: lightblue;
+
+@mixin back-image {
+    padding: 2vw;
+    border-radius: 50%;
+    border: 1px solid $color3;
+    width: $width-main*.5;
+    height: $width-main*.5;
+    background-color: $color3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $font-size-main*3;
+}
+
+@mixin hover {
+    transform: scale(1.2);
+    background-color: transparent;
+}

@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: auto;
+    background-color: hsla(177, 35%, 56%, 0.267);
+
+    .main {
+        margin: 0 auto;
+        width: 80vw;
+        text-align: center;
+        padding: 2vw;
+        @include center(flex, row, center);
+
+
+        .birth {
+            font-size: $text * 2.2;
+            width: $text*20;
+            height: $text*20;
+            text-align: center;
+            cursor: pointer;
+
+            border: 1px solid lightpink {
+                radius: 50%;
+            }
+
+            background-color: rgb(189, 186, 186);
+        }
+    }
+}
