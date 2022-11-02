@@ -1,34 +1,61 @@
-// import { diary, monthButton } from './diary';
 import { drowMonth } from './month'
-import{toMonthName, lastDate} from './var'
+import { toMonthName, lastDate} from './var'
+import {yearPlace} from './year'
 
 
 function drowdays(board1, event) {
     if (event.target.innerText) {
-       
         const dataid = Number(event.target.dataset.id);
         const datayear = event.target.dataset.year;
-        let textMonth = getMonthText(datayear, toMonthName(dataid), dataid, true)|| 'Start Your Diary. Click On Date.';
-        let textYear = getYearText(datayear) || 'Start Your Diary. Click On Date.';
+        // eslint-disable-next-line max-len
+        let textMonth = getMonthText(datayear, toMonthName(dataid), dataid, true)|| '<p>To Start Your Diary, Click On Date.</p>';
+        let textYear = getYearText(datayear) || '<p>To Start Your Diary, Click On Date.</p>';
+        const diaryMonthButton = document.querySelector('.nexty_d');
+        const diaryYearButton = document.querySelector('.backy_d');
         const nextButton = document.querySelector('.nexty');
         const backButton = document.querySelector('.backy');
+        
         if (event.target.classList[0] === 'monthname') {
-            nextButton.classList.add('hide');
-            backButton.classList.add('hide');
-            board1.innerHTML = `<div class="mboard"></div>`;
+            diaryMonthButton.classList.add('diary_month');
+            diaryYearButton.classList.add('diary_year');
+            diaryMonthButton.innerHTML = `<div class="namediary">Diary Of ${toMonthName(dataid)}</div>`
+            diaryYearButton.innerHTML = `<div class="namediary">Diary Of ${datayear}</div>`
+            board1.innerHTML = `<div class="mboard"></div>
+            <button class="tomonth" type="button">Back To Calendar</button>`;
             const mboard = document.querySelector('.mboard');
-           
             drowMonth(datayear, dataid, mboard, 'day1', 'week1', 'center');
-            mboard.innerHTML += `<div class="diary monthdiary">
-            <div class="namediary">Diary Of ${toMonthName(dataid)}</div><hr>
-            <div class="textm">${textMonth}</div></div>`
-            mboard.innerHTML += `<div class="diary yeardiary">
-            <div class="namediary">Diary Of ${datayear}</div><hr>
-            <div class="texty">${textYear}</div></div>`
+            // eslint-disable-next-line max-len
+            const diaryButton = document.querySelector('.head');
             let prev = document.querySelector('.prevm');
             let next = document.querySelector('.nextm');
             prev.classList.remove('hide');
             next.classList.remove('hide');
+            
+            diaryYearButton.addEventListener('click', () => {
+                diaryButton.classList.add('hide')
+                mboard.innerHTML = `<div class="diary0">
+                                            <div class="diary yeardiary">
+                                            <div class="namediary">Diary Of ${datayear}</div>
+                                                <div class="texty">
+                                                ${textYear}</div>
+                                            
+                                            </div>
+                                    </div>`
+            })
+            diaryMonthButton.addEventListener('click', () => {
+                diaryButton.classList.add('hide')
+                mboard.innerHTML = `<div class="diary0">
+                                    <div class="diary monthdiary">
+                                        <div class="namediary">Diary Of ${toMonthName(dataid)}</div>
+                                        <div class="textm">${textMonth}</div>
+                                    </div>
+                            </div>`
+            })
+            const monthesButton = document.querySelector('.tomonth');
+            monthesButton.addEventListener('click', () => {
+            let vv = localStorage.getItem('year');
+            yearPlace(datayear, Number(vv));
+            })
         }
         if (event.target.classList[0] === 'center') {
             console.log('this.event',this.event.target)

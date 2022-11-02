@@ -12,7 +12,7 @@ function diaryF(el) {
             let month = toMonthName(id[1]);
             let date = id[2];
             let xx = localStorage.getItem(`${year}/${month}/${date}`)||'';
-            el.innerHTML = `<div class="diary">
+            el.innerHTML = `<div class="diary1">
                             <div class="today">
                             <h2>${date} of ${month} ${year}</h2>
                             <h2>Just Print Your Thoughts Here</h2>

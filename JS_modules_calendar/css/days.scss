@@ -1,6 +1,18 @@
+.diary1 {
+    height: 60vh;
+}
+
+.today {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    color: black;
+}
+
 #blank {
-    width: 80vw;
-    height: 20vw;
+    width: 90vw;
+    height: 50vh;
     margin: 2vw auto;
     background-color: transparent;
     border: 1px solid lightgrey;
@@ -8,7 +20,7 @@
     font-family: 'Dancing Script', cursive;
     font-weight: 100;
     color: black;
-    ;
+
 }
 
 .title {
@@ -20,12 +32,4 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-.today {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: 400;
-    color: black;
 }

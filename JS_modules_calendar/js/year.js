@@ -22,18 +22,13 @@ function start(birthDate) {
 }
 
 function yearDrow(y, birthDate) {
-    console.log(birthDate);
-    y.innerHTML += `<div class="year-0"><p class="backyear">${birthDate}</p></div>`
-    for (let el = birthDate+1; el <= birthDate + 99; el++) {
+    for (let el = birthDate; el <= birthDate + 99; el++) {
         if (el === date.getFullYear()) {
-            let ff = document.querySelector(`.year-${el-birthDate-1}`);
-                ff.innerHTML += `<div class="year-${el-birthDate} red"><p class="backyear">${el}</p></div>`
+            y.innerHTML += `<div class="year red"><p class="backyear">${el}</p></div>`
         } else {
-            let ff = document.querySelector(`.year-${el-birthDate-1}`);
-            ff.innerHTML += `<div class="year-${el-birthDate}">${el}</div>`;
+            y.innerHTML += `<div class="year"><p class="backyear">${el}</p></div>`;
         }
     }
-    // <p class="backyear"></p>
     chooseYear(y, birthDate);
         move(y);
 }
@@ -48,9 +43,13 @@ let chooseYear = (y, birthDate) => y.addEventListener('click', (event) => {
 function titleYear(year) {
     x.innerHTML = `<section class="fullyear">
             <div class="years">
+            <div class="backy_d">
             <p class="backy">${Number(year) - 1}</p>
+            </div>
             <div class="head">${year}</div>
+            <div class="nexty_d">
             <p class="nexty">${Number(year) + 1}</p>
+            </div>
             </div>
             <div class="board1">
             </div>
@@ -83,51 +82,38 @@ function move(y) {
     for (let i = 0; i <= 12; i++) {
         (function (i) {
             setTimeout(function () {
-                let kk = document.querySelector(`.year-${i}`)
-                kk.classList.add('child')
+                y.children[i].classList.add('child')
             }, 30 * i);
         })(i);
     }
     for (let i = 13; i <= 24; i++) {
         (function (i) {
             setTimeout(function () {
-                let kk = document.querySelector(`.year-${i}`)
-                kk.classList.add('youth')
+                y.children[i].classList.add('youth')
             }, 30 * i);
         })(i);
     }
     for (let i = 25; i <= 48; i++) {
         (function (i) {
             setTimeout(function () {
-                let kk = document.querySelector(`.year-${i}`)
-                kk.classList.add('active')
+                y.children[i].classList.add('active')
             }, 30 * i);
         })(i);
     }
     for (let i = 49; i <= 72; i++) {
         (function (i) {
             setTimeout(function () {
-                let kk = document.querySelector(`.year-${i}`)
-                kk.classList.add('travel')
+                y.children[i].classList.add('travel')
             }, 30 * i);
         })(i);
     }
     for (let i = 73; i < y.children.length; i++) {
         (function (i) {
             setTimeout(function () {
-                let kk = document.querySelector(`.year-${i}`)
-                kk.classList.add('wisdom')
+                y.children[i].classList.add('wisdom')
             }, 30 * i);
-            //     y.children[i].classList.add('wisdom')
-            // }, 30 * i);
         })(i);
     }
-            // (function (i) {
-            //     setTimeout(function () {
-            //         y.children[i].classList.remove('play')
-            //     }, 51 * i);
-            // })(i);
-        
     }
 
 export {yearPlace, birthInput}
